@@ -1,0 +1,20 @@
+[gd_scene format=2]
+
+[node name="MainSceneUI" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Oxygen" type="Label" parent="."]
+anchor_left = 0.022
+anchor_right = 0.022
+margin_left = -14.136
+margin_top = 1.0
+margin_right = 65.864
+margin_bottom = 27.0
+text = "O2 "
+__meta__ = {
+"_edit_use_anchors_": false
+}

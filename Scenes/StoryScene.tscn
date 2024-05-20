@@ -1,0 +1,53 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Scripts/StoryScene.gd" type="Script" id=1]
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel" type="RichTextLabel" parent="TextureRect"]
+anchor_left = 0.01
+anchor_top = 0.028
+anchor_right = 0.996
+anchor_bottom = 0.853
+margin_left = 6.12
+margin_top = 5.092
+margin_right = -0.248047
+margin_bottom = 0.016983
+text = "It's the year 2146 On a quite day while the brave astronaut was exploring the wonders of space, Suddenly some strange voices came from the engine room and the spaceship started breaking down and falling into a strange planet gravity.
+
+The astronaut made some maneuvers and managed to barely land the spaceship safely, but it was severly damaged.
+
+Two hours have passed, The astronaut came out, noticed a fast increase in the tempreture and found out the sun of that planet is starting to burn everything!
+
+\"Run astronaut Run\", The astronaut said to themself, The oxegen is starting to run out!
+
+Fortunately the astronaut found that some areas have water vapor in them, The astronaut quickly started collecting them while running to extract oxegen using some special tools."
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="TextureRect"]
+margin_left = 279.0
+margin_top = 183.0
+margin_right = 372.0
+margin_bottom = 206.0
+text = "Play"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="pressed" from="TextureRect/Button" to="." method="_on_Button_pressed"]
